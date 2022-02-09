@@ -1,0 +1,333 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: white;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.grid {
+  width: 100rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.5rem;
+  row-gap: 3rem;
+}
+
+.report {
+  grid-row: 1 /3;
+  background-color: hsl(235, 46%, 20%);
+  }
+.child-one {
+display: flex;
+flex-direction: column;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+width: 22rem;
+}
+.child-one .img-text {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5rem;
+  background-color:hsl(246, 80%, 60%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: relative;
+}
+.img-text img {
+  width: 6rem;
+  position: absolute;
+  left: 4rem;
+  top: 3rem;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.img-text span {
+  font-size: 1rem;
+  opacity: 0.7;
+  position: absolute;
+  top: 12rem;
+  left: 4rem;
+}
+.img-text h4 {
+  font-size: 3.5rem;
+  line-height: 1.3;
+  word-break: break;
+  text-transform: capitalize;
+  position: absolute;
+  top: 14rem;
+  left: 4rem;
+}
+.sec-row {
+  display: flex;
+  padding-left: 2rem;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 13rem;
+  background-color: hsl(235, 46%, 20%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem 5rem;
+}
+.sec-row p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer; 
+  opacity: .5;
+}
+.sec-row .active {
+  opacity: 1;
+}
+.sec-row p:hover, .active:hover {
+  opacity: 1;
+  border-bottom: 1px solid white;
+}
+
+.grid .chlid {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 22rem;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+}
+.weekly {
+  padding: 2rem 3rem;
+  position: relative;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 5;
+}
+.weekly:hover,.weekly:active {
+  opacity: 1;
+}
+.mo {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.mo2 {
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: .7;
+}
+.child .color {
+  width: 100%;
+  height: 4rem;
+  /* position: absolute;
+  top: -4rem; */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.color {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.work , .play, .study, .Exercise, .Social, .self-care {
+  background-color: hsl(235, 46%, 20%);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+ 
+} 
+.work .color {
+  background-color: hsl(15, 100%, 70%);
+}
+.play .color {
+  background-color: hsl(195, 74%, 62%);
+}
+.study .color {
+  background-color: hsl(348, 100%, 68%);
+}
+.Exercise .color {
+  background-color: hsl(145, 58%, 55%);
+}
+.Social .color {
+  background-color: hsl(264, 64%, 52%);
+}
+.self-care .color {
+  background-color: hsl(43, 84%, 65%);
+}
+.grid .child h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.child p {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 2.5rem;
+}
+.child .numb {
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  opacity: 1;
+}
+@media (max-width: 991px) {
+  .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+  .grid {
+  width: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  }
+}
+
+ @media (max-width: 767Px) {
+  .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 3rem;
+  margin-top: 12rem;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: .5rem;
+}
+.child-one {
+display: flex;
+flex-direction: column;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+width: 25rem;
+}
+.child-one .img-text {
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+}
+.img-text img {
+  width: 4rem;
+  position: absolute;
+  left: .5rem;
+  top: 3rem; 
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.img-text span {
+  font-size: 1rem;
+  opacity: 0.7;
+   position: absolute;
+  top: 3rem;
+  left: 6rem; 
+}
+.img-text h4 {
+  font-size: 1rem;
+  line-height: 1.3;
+  word-break: break;
+  text-transform: capitalize;
+  position: absolute;
+  top: 4rem;
+  left: 6rem; 
+}
+.sec-row {
+  display: flex;
+  padding-left: 1rem;
+  flex-direction: row;
+  column-gap: 1rem;
+  height: 4rem;
+  background-color: hsl(235, 46%, 20%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem 2.5rem;
+}
+.sec-row p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer; 
+  opacity: .5;
+}
+.sec-row p:hover {
+  opacity: 1;
+  border-bottom: 1px solid white;
+}
+.child {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 25rem;
+  height: 13rem;
+}
+.child .color {
+  width: 100%;
+  height: 4.9rem;
+  position: absolute;
+  top: -1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.child .numb {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  opacity: 1;
+}
+.child p {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+} 
